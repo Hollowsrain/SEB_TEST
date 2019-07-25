@@ -1,0 +1,9 @@
+1. Isijungti betkoki javos idea.
+2. Parsisiuti projekto clona is sio linko https://github.com/Hollowsrain/SEB_TEST.
+3. Atsidarius Lentelei "Import Project from Gradle" pasirinkti "Use auto-import".
+4. Atidaryti projekta ir palaukti kol viska uzkraus.
+5. Paleisti projekta. jei nesurastu automatiskai main'o, nueiti i src/main/java/lt.donato.seb.test.iban_validation_service
+   ir paleisti Server clase
+6. Atsidaryti narsykle ir irasyti si url http://localhost:8080/validation_page.html
+------------Papildoma Informacija--------------
+validuotus faila galite rasti ibans folderi projekte. Jis bus su pletiniu .out
