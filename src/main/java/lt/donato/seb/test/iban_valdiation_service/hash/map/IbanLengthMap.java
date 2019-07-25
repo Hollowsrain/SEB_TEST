@@ -87,12 +87,13 @@ public class IbanLengthMap {
     }
 
     public boolean ibanLengthValidation(String iban){
-        boolean isValid;
-        if ((capitalCities.get(iban.substring(0,2)).equals(iban.length()))){
-            isValid = true;
-        } else{
-            isValid = false;
+        boolean isValid = false;
+        try {
+            isValid = (capitalCities.get(iban.substring(0, 2)).equals(iban.length()));
+        } catch (NullPointerException npe){
+            System.out.println(iban + " Cannot exist");
         }
+
     return isValid;
     }
 
