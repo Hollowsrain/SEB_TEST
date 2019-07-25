@@ -1,0 +1,16 @@
+<html>
+<body>
+<h2>Validuoti IBAN naudojant faila</h2>
+<form name="fileValidation" method="POST" action="iban/uploadFile" enctype="multipart/form-data">
+    <label>Pasirinkite faila</label> <br />
+    <input type="file" name="file" />
+    <input type="submit" name="submit" value="Pateikti" />
+</form>
+<h2>Validuoti viena IBAN</h2>
+<form name="singleValidation" method="POST" action="iban/" enctype="text/plain">
+    <label>Irasykite IBAN i pateikta laukeli</label>
+    <input type="text" name="code"/>
+    <input type="submit" name="submit" value="Tikrinti"/>
+</form>
+</body>
+</html>
