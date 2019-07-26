@@ -10,7 +10,7 @@ public class IbanUtilsImpl implements IbanUtilsService {
     }
 
     @Override
-    public String ibanNumberCode(String iban) {
+    public String ibanNumberAsString(String iban) {
         String[] ibanAsNumber = iban.split("");
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < iban.length(); i++) {

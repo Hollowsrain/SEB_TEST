@@ -4,6 +4,6 @@ public interface IbanUtilsService {
 
     String trimIBAN(String iban);
 
-    String ibanNumberCode(String iban);
+    String ibanNumberAsString(String iban);
 
 }
