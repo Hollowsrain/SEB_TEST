@@ -13,12 +13,12 @@ public class IbanController {
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public boolean checkSingleIban(@RequestBody() String code) {
-        return ibanService.isIbanValidInput(ibanService.trimIBAN(code));
+        return ibanService.isIbanValid(code);
     }
 
     @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
     public void checkIbanFile(@RequestParam("file") MultipartFile file) {
-        ibanService.isIbanValidFile(file);
+        ibanService.ibanValidationToFile(file);
     }
 
 }

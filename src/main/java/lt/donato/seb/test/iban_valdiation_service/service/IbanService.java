@@ -4,12 +4,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface IbanService {
 
-    boolean isIbanValidInput(String code);
+    boolean isIbanValid(String code);
 
-    void isIbanValidFile(MultipartFile file);
-
-    String trimIBAN(String iban);
-
-    String ibanToNumber(String iban);
+    void ibanValidationToFile(MultipartFile file);
 
 }
